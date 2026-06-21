@@ -1,6 +1,6 @@
 # Frontend Mentor - Todo app
 
-![Design preview for the Todo app coding challenge](preview.jpg)
+![Design preview for the Todo app coding challenge](images/icon-cross.svg)
 ![Design preview for the Todo app coding challenge](images/icon-cross.svg)
 
 ## Welcome! 👋
