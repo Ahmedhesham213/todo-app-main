@@ -1,9 +1,9 @@
-# Frontend Mentor - Todo app
+## Welcome! 👋
+# 📝 Todo App - Frontend Mentor Challenge
 
 ![Design preview for the Todo app coding challenge](preview.jpg)
 
-## Welcome! 👋
-# 📝 Todo App - Frontend Mentor Challenge
+---
 
 Live Demo: https://todo-app-main-ashen-one.vercel.app/
 
