@@ -53,7 +53,7 @@ function buildTodoItem(todo) {
     'aria-label',
     todo.completed ? 'Mark as not completed' : 'Mark as completed'
   );
-  checkBtn.innerHTML = todo.completed ? '<img src="images/icon-check.svg" alt="" />' : '';
+  checkBtn.innerHTML = todo.completed ? '<img src="../images/icon-check.svg" alt="" />' : '';
   checkBtn.onclick = () => toggleComplete(todo.id);
 
   const text = document.createElement('span');
@@ -64,7 +64,7 @@ function buildTodoItem(todo) {
   delBtn.type = 'button';
   delBtn.className = 'todo-delete';
   delBtn.setAttribute('aria-label', 'Delete todo');
-  delBtn.innerHTML = '<img src="images/icon-cross.svg" alt="icon" />';
+  delBtn.innerHTML = '<img src="../images/icon-cross.svg" alt="icon" />';
   delBtn.onclick = () => deleteTodo(todo.id);
 
   li.append(checkBtn, text, delBtn);
