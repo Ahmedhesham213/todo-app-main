@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-img" id="bgImg"></div>
+
+    <main class="app">
+      <header class="app__header">
+        <h1 class="logo">T O D O</h1>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <img src="images/icon-sun.svg" alt="" class="icon-sun" />
+          <img src="images/icon-moon.svg" alt="" class="icon-moon" />
+        </button>
+      </header>
+
+      <div class="card">
+        <div class="new-todo-wrap">
+          <span class="check-circle check-circle--empty" aria-hidden="true"></span>
+          <input
+            id="newTodoInput"
+            class="new-todo-input"
+            type="text"
+            placeholder="Create a new todo..."
+            autocomplete="off"
+          />
+        </div>
+
+        <ul class="todo-list" id="todoList"></ul>
+
+        <div class="list-footer">
+          <span id="itemsLeft" class="items-left">5 items left</span>
+          <div class="filters filters--desktop" id="filtersDesktop">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+          </div>
+          <button class="clear-completed" id="clearCompleted">Clear Completed</button>
+        </div>
+      </div>
+
+      <div class="filters filters--mobile" id="filtersMobile">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <p class="drag-hint">Drag and drop to reorder list</p>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
