@@ -1,5 +1,5 @@
-import { checkCircle, clearCompletedBtn, filterBtns, newTodoInput, THEME_KEY, themeToggle } from './element';
-import { addTodo, clearCompleted, setFilter, setTheme } from './function';
+import { checkCircle, filterBtns, newTodoInput, THEME_KEY, themeToggle } from './element';
+import { addTodo, setFilter, setTheme } from './function';
 
 const addEvent = () => {
   checkCircle.addEventListener('click', () => {
@@ -12,7 +12,10 @@ const addEvent = () => {
     newTodoInput.value = '';
   });
 
-  clearCompletedBtn.addEventListener('click', clearCompleted);
+  checkCircle.addEventListener('click', () => {
+    addTodo(newTodoInput.value);
+    newTodoInput.value = '';
+  });
 
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => setFilter(btn.dataset.filter));
@@ -22,9 +25,8 @@ const addEvent = () => {
     const current = document.documentElement.getAttribute('data-theme');
     setTheme(current === 'dark' ? 'light' : 'dark');
   });
-  
-  setTheme(localStorage.getItem(THEME_KEY) || 'light');
 
+  setTheme(localStorage.getItem(THEME_KEY) || 'light');
 };
 
 export default addEvent;

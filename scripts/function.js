@@ -54,9 +54,7 @@ function buildTodoItem(todo) {
     todo.completed ? 'Mark as not completed' : 'Mark as completed'
   );
   checkBtn.innerHTML = todo.completed
-    ? `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" fill-rule="evenodd" d="M7.8 13.2L3.6 9l.9-.9 3.3 3.3 6.3-6.3.9.9-7.2 7.2z"/>
-    </svg>`
+    ? '<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M1 4.5L4 7.5L10 1"/></svg>'
     : '';
   checkBtn.onclick = () => toggleComplete(todo.id);
 

@@ -1,6 +1,6 @@
 /* ===== LIGHT THEME TOKENS ===== */
 :root,
-[data-theme='light'] {
+[data-theme="light"] {
   --bg-body: #fafafa;
   --bg-card: #ffffff;
   --bg-input: #ffffff;
@@ -18,7 +18,7 @@
 }
 
 /* ===== DARK THEME TOKENS ===== */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --bg-body: #161722;
   --bg-card: #25273c;
   --bg-input: #25273c;
@@ -34,32 +34,25 @@
   --check-grad-start: #57ddff;
   --check-grad-end: #c058f3;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   min-height: 100vh;
 }
 
 body {
-  font-family:
-    'Josefin Sans',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    sans-serif;
+  font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 18px;
   background: var(--bg-body);
   color: var(--text-primary);
   position: relative;
   overflow-x: hidden;
-  transition:
-    background 0.3s ease,
-    color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ===== HERO BACKGROUND ===== */
@@ -75,24 +68,22 @@ body {
   background-repeat: no-repeat;
 }
 
-[data-theme='light'] .bg-img {
+[data-theme="light"] .bg-img {
   background-image: url('images/bg-desktop-light.jpg');
 }
 
-[data-theme='dark'] .bg-img {
+[data-theme="dark"] .bg-img {
   background-image: url('images/bg-desktop-dark.jpg');
 }
 
 @media (max-width: 600px) {
-  .bg-img {
-    height: 200px;
-  }
+  .bg-img { height: 200px; }
 
-  [data-theme='light'] .bg-img {
+  [data-theme="light"] .bg-img {
     background-image: url('images/bg-mobile-light.jpg');
   }
 
-  [data-theme='dark'] .bg-img {
+  [data-theme="dark"] .bg-img {
     background-image: url('images/bg-mobile-dark.jpg');
   }
 }
@@ -107,10 +98,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .app {
-    padding: 32px 24px 0;
-    max-width: 100%;
-  }
+  .app { padding: 32px 24px 0; max-width: 100%; }
 }
 
 .app__header {
@@ -129,10 +117,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .logo {
-    font-size: 24px;
-    letter-spacing: 8px;
-  }
+  .logo { font-size: 24px; letter-spacing: 8px; }
 }
 
 .theme-toggle {
@@ -148,9 +133,7 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.theme-toggle:hover {
-  opacity: 0.7;
-}
+.theme-toggle:hover { opacity: 0.7; }
 .theme-toggle:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 4px;
@@ -164,18 +147,11 @@ body {
 }
 
 @media (max-width: 600px) {
-  .theme-toggle img {
-    width: 20px;
-    height: 20px;
-  }
+  .theme-toggle img { width: 20px; height: 20px; }
 }
 
-[data-theme='light'] .icon-sun {
-  display: block !important;
-}
-[data-theme='dark'] .icon-moon {
-  display: block !important;
-}
+[data-theme="light"] .icon-sun { display: block !important; }
+[data-theme="dark"] .icon-moon { display: block !important; }
 
 /* ===== CARD ===== */
 .card {
@@ -195,10 +171,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .new-todo-wrap {
-    padding: 16px 20px;
-    gap: 14px;
-  }
+  .new-todo-wrap { padding: 16px 20px; gap: 14px; }
 }
 
 .check-circle {
@@ -217,10 +190,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .check-circle {
-    width: 20px;
-    height: 20px;
-  }
+  .check-circle { width: 20px; height: 20px; }
 }
 
 .check-circle--empty {
@@ -230,9 +200,8 @@ body {
 
 .check-circle--empty:hover {
   border-color: transparent;
-  background:
-    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
-    linear-gradient(135deg, var(--check-grad-start), var(--check-grad-end)) border-box;
+  background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+              linear-gradient(135deg, var(--check-grad-start), var(--check-grad-end)) border-box;
   border: 2px solid transparent;
 }
 
@@ -241,7 +210,7 @@ body {
   border: none;
 }
 
-.check-circle--checked img {
+.check-circle--checked svg {
   width: 11px;
   height: 9px;
 }
@@ -262,9 +231,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .new-todo-input {
-    font-size: 14px;
-  }
+  .new-todo-input { font-size: 14px; }
 }
 
 /* ===== TODO LIST ===== */
@@ -292,10 +259,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .todo-item {
-    padding: 16px 20px;
-    gap: 14px;
-  }
+  .todo-item { padding: 16px 20px; gap: 14px; }
 }
 
 .todo-text {
@@ -307,9 +271,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .todo-text {
-    font-size: 14px;
-  }
+  .todo-text { font-size: 14px; }
 }
 
 .todo-item.completed .todo-text {
@@ -326,9 +288,7 @@ body {
   cursor: pointer;
   color: var(--text-secondary);
   opacity: 0;
-  transition:
-    opacity 0.15s ease,
-    color 0.15s ease;
+  transition: opacity 0.15s ease, color 0.15s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,14 +300,9 @@ body {
   opacity: 1;
 }
 
-.todo-delete:hover {
-  color: var(--blue-500);
-}
+.todo-delete:hover { color: var(--blue-500); }
 
-.todo-delete svg {
-  width: 14px;
-  height: 14px;
-}
+.todo-delete svg { width: 14px; height: 14px; }
 
 /* ===== FOOTER ===== */
 .list-footer {
@@ -360,15 +315,10 @@ body {
 }
 
 @media (max-width: 600px) {
-  .list-footer {
-    padding: 16px 20px;
-    font-size: 12px;
-  }
+  .list-footer { padding: 16px 20px; font-size: 12px; }
 }
 
-.items-left {
-  white-space: nowrap;
-}
+.items-left { white-space: nowrap; }
 
 .filters {
   display: flex;
@@ -376,14 +326,10 @@ body {
   gap: 18px;
 }
 
-.filters--mobile {
-  display: none;
-}
+.filters--mobile { display: none; }
 
 @media (max-width: 600px) {
-  .filters--desktop {
-    display: none;
-  }
+  .filters--desktop { display: none; }
   .filters--mobile {
     display: flex;
     justify-content: center;
@@ -410,17 +356,9 @@ body {
   transition: color 0.15s ease;
 }
 
-.filter-btn:hover {
-  color: var(--text-primary);
-}
-.filter-btn.is-active {
-  color: var(--blue-500);
-}
-.filter-btn:focus-visible {
-  outline: 2px solid var(--blue-500);
-  outline-offset: 3px;
-  border-radius: 2px;
-}
+.filter-btn:hover { color: var(--text-primary); }
+.filter-btn.is-active { color: var(--blue-500); }
+.filter-btn:focus-visible { outline: 2px solid var(--blue-500); outline-offset: 3px; border-radius: 2px; }
 
 .clear-completed {
   background: none;
@@ -433,9 +371,7 @@ body {
   transition: color 0.15s ease;
 }
 
-.clear-completed:hover {
-  color: var(--text-primary);
-}
+.clear-completed:hover { color: var(--text-primary); }
 
 /* ===== DRAG HINT ===== */
 .drag-hint {
@@ -448,7 +384,5 @@ body {
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-  }
+  * { transition: none !important; }
 }
