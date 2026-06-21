@@ -64,7 +64,7 @@ function buildTodoItem(todo) {
   delBtn.type = 'button';
   delBtn.className = 'todo-delete';
   delBtn.setAttribute('aria-label', 'Delete todo');
-  delBtn.innerHTML = '<img  width="18" height="18" src="../images/icon-cross.svg" alt="❌"/>';
+  delBtn.innerHTML = '<img src="images/icon-cross.svg" alt="icon" />';
   delBtn.onclick = () => deleteTodo(todo.id);
 
   li.append(checkBtn, text, delBtn);
